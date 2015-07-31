@@ -1,0 +1,713 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"index",
+				"indexPath"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"per",
+				"Personal"
+			],
+			[
+				"person",
+				"Personal_Usuarios"
+			],
+			[
+				"Personal_",
+				"personal_usuarios"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"catego",
+				"categoria_id"
+			],
+			[
+				"for",
+				"forEach(function(aSome) {"
+			],
+			[
+				"cargar",
+				"cargartabltodo()	table_basic.blade.php"
+			],
+			[
+				"show",
+				"show()	datatables.tabletools.js"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php namespace App\\Http\\Controllers\\Auth;\n\nuse App\\Http\\Controllers\\Controller;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Contracts\\Auth\\Guard;\nuse Illuminate\\Contracts\\Auth\\Registrar;\nclass AuthController extends Controller {\n\n	/*\n	|--------------------------------------------------------------------------\n	| Registration & Login Controller\n	|--------------------------------------------------------------------------\n	|\n	| This controller handles the registration of new users, as well as the\n	| authentication of existing users. By default, this controller uses\n	| a simple trait to add these behaviors. Why don't you explore it?\n	|\n	*/\n\n	protected $auth;\n\n	/**\n	 * The registrar implementation.\n	 *\n	 * @var Registrar\n	 */\n	protected $registrar;\n\n	/**\n	 * Create a new authentication controller instance.\n	 *\n	 * @param  \\Illuminate\\Contracts\\Auth\\Guard  $auth\n	 * @param  \\Illuminate\\Contracts\\Auth\\Registrar  $registrar\n	 * @return void\n	 */\n	public function __construct(Guard $auth, Registrar $registrar)\n	{\n		$this->auth = $auth;\n		$this->registrar = $registrar;\n\n		/*$this->middleware('guest', ['except' => 'getIndex']);*/\n	}\n	public function postAutentificar(Request $request)\n	{\n		$this->validate($request, [\n			'username' => 'required', 'password' => 'required',\n		]);\n\n		$credentials = $request->only('username', 'password');\n\n		if ($this->auth->attempt($credentials, $request->has('remember')))\n		{\n			return redirect()->intended('Inicio');\n		}\n\n		return redirect('/')\n					->withInput($request->only('username', 'remember'))\n					->withErrors([\n						'username' => 'Los datos no coinciden con nuestros registros.',\n					]);\n	}\n\n	/**\n	 * Log the user out of the application.\n	 *\n	 * @return \\Illuminate\\Http\\Response\n	 */\n	/*public function getIndex(){\n		return view('index');\n	}*/\n	/*	public function getTest()\n	{\n		return view('auth.password');\n	}\n	public function getRegister()\n	{\n		return view('auth.register');\n	}*/\n\n	public function getLogout()\n	{\n		$this->auth->logout();\n\n		return redirect('/');\n	}\n	\n\n	\n\n\n}\n",
+			"file": "AuthController.php",
+			"file_size": 2342,
+			"file_write_time": 130689294024291288,
+			"settings":
+			{
+				"buffer_size": 2035,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 1587,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/Authenticate.php",
+			"settings":
+			{
+				"buffer_size": 742,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/RedirectIfAuthenticated.php",
+			"settings":
+			{
+				"buffer_size": 712,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Artisan",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"arti",
+				"Laravel Artisan: Help"
+			],
+			[
+				"controll",
+				"Laravel Generate: Controller"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"termina",
+				"Preferences: Terminal Key Bindings – Default"
+			],
+			[
+				"terminal",
+				"Preferences: Terminal Settings – User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"installc",
+				"Package Control: Install Package"
+			],
+			[
+				"controller",
+				"Laravel Generate: Controller"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"model",
+				"Laravel Generate: Model"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 368.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/TICS5A/copadeleche/app",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Commands",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Console",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Events",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Exceptions",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Handlers",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Handlers/Commands",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Handlers/Events",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/Auth",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/auth",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/cajero",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/illuminate",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Auth",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Contracts",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Contracts/Auth",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Foundation",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Foundation/Auth"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Kernel.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/WelcomeController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/routes.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/Authenticate.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/Http/routes.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/UserController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/login.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/cajero/ventas.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/Proyectos2015/Reportes2/app/views/layouts/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/layouts/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/User.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/User.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Auth/Guard.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/config/app.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/lang/en/validation.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/lang/es/validation.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Personal_Usuarios.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/PersonalUsuarios.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Registrar.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Categoria.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/js/table-manage-default.demo.min.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/js/jquery.dataTables.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/HttpCache/Store.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/css/data-table.css",
+		"/C/Users/Daniel/Documents/2015_02_17_000000_create_users_table.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/images/collection_hover.html",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/images/collection.html",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/composer/installed.json",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/phpunit/phpunit/tests/_files/ExceptionInSetUpTest.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/phpunit/php-token-stream/tests/_fixture/classInScopedNamespace.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/phpunit/phpunit/src/Framework/Constraint/IsNull.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/index.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/config/mail.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/masked-input/masked-input.min.js",
+		"/C/xampp/htdocs/Proyectos2015/Reportes2/app/routes.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/cajero/table_manage.blade.php",
+		"/C/xampp/htdocs/TICS5A/renuevawebonline/app/routes.php",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/table_manage.html",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.339/Categoria.php",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.673/2015_02_18_032555_create_foreign_keys.php",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.060/2015_02_18_032545_create_users_table.php",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.699/2015_02_18_032545_create_categorias_table.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/database/migrations/2015_02_17_000000_create_users_table.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Providers/AppServiceProvider.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Http/Controllers/Auth/PasswordController.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Categoria.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/database/migrations/2015_02_16_180145_categorias.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/User.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/config/database.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/.env",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/composer.json",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/config/app.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/resources/views/contact.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/resources/views/pages/about.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/resources/views/layouts.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Controllers/PageController.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/routes.php",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Controllers/PagesController.php",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/xampp/htdocs/Proyectos2015/Reportes/composer.lock",
+		"/C/xampp/htdocs/Proyectos2015/Reportes/.env.example",
+		"/C/xampp/htdocs/Proyectos2015/Reportes/.env",
+		"/C/xampp/htdocs/Proyectos2015/Reportes/.gitattributes",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/Proyectos2015/Reportes/sftp-config.json",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/views/table_basic.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/public/js/ConsignatariosValidator.js",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/views/Layout/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/routes.php",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/ProyectosWeb/Laravel-Equipos/public/js/JSJugador.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/ProyectosWeb/Laravel-Equipos/public/js/JSMDLEquipo.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/ProyectosWeb/Laravel-Equipos/public/js/JSEquipo.js",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/controllers/CatalogoController.php",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/form_elements.html",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/ProyectosWeb/Laravel-Equipos/public/js/JSMDLJugador.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/ProyectosWeb/Laravel-Equipos/public/js/Animaciones.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/ProyectosWeb/Laravel-Equipos/public/js/JScript.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/ProyectosWeb/Laravel-Equipos/public/js/jquery.min.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/form_editable.html",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/views/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/public/js/Validator.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/assets/css/animate.min.css",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/views/form_elements.blade.php",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/assets/css/style-responsive.min.css",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/assets/css/style.min.css",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/assets/css/theme/default.css",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/assets/js/form-wizards-validation.demo.min.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/assets/plugins/password-indicator/js/password-indicator.js",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/config/database.php",
+		"/C/Users/Daniel/Downloads/UsuarioController.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/models/Consignatario.php",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/app/views/Vistas/ReporteSistemas.blade.php",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/app/views/Vistas/Solicitudes.blade.php",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/app/views/MenuUsuario.blade.php",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/app/views/Tableoo.blade.php",
+		"/C/Users/Daniel/Dropbox/UTT/TICS4A/EJ06/js/Jscript.js",
+		"/C/Users/Daniel/Dropbox/UTT/TICS4A/EJ01/js/Jscript.js",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/public/js/UsuarioNormal/Js_SolicitudUsuario.js",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/app/views/Solicitudes.blade.php",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/public/js/JScript.js",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/public/js/Animaciones.js",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/public/js/Administrador/Js_Admin.js",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/public/js/Sistema/js_tabla_admin.js",
+		"/C/Users/Daniel/Dropbox/UTT/SistemaDeSolicitud4A/ProyectoSolicitudes/app/views/menu2.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/Http/Middleware/Authenticate.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoII/app/views/hello.php",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoBlankon/Intent1/themes.djavaui.com/blankon-fullpack-admin-theme/1.0.0/live-preview/admin/html/blankon-versions.html",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 55.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"assets",
+			"plugins",
+			"Plugins",
+			"plugins",
+			"css",
+			"CSS",
+			"css",
+			"auth",
+			"plugins",
+			"	<script src=\"plugins/flot/jquery.flot.time.min.js\"></script>\n",
+			"plugins",
+			"Plugins",
+			"plugins",
+			"assets",
+			"getHome",
+			"postHome",
+			"home",
+			"email",
+			"attemp",
+			"attempt",
+			"username",
+			"password",
+			"username",
+			"email",
+			"validateCredentials",
+			"guard",
+			"email",
+			"Personal",
+			"The password field is required",
+			"The password field is required.",
+			"pass",
+			"username",
+			"field is required",
+			"There were some problems with your input.",
+			"Illuminate\\Contracts\\Auth\\Guard;",
+			"assets",
+			"Showing",
+			"Showing 1 to 5 of 5 entries",
+			"entries",
+			"language",
+			" entries",
+			"table-responsive",
+			"name=\"data-table_length\"",
+			"data-table_length",
+			"name=\"data-table_length\"",
+			"select",
+			"<select class=\"\" aria-controls=\"data-table\" name=\"data-table_length\">",
+			"<option value=\"10\">10</option><option value=\"25\">25</option><option value=\"50\">50</option><option value=\"100\">100</option>",
+			"search",
+			"/******",
+			"TableManageDefault",
+			"@",
+			"data-table_length",
+			"registrar",
+			"The email field is required.",
+			"AbstractSmtpTransport",
+			"postRegi",
+			"wrapp",
+			"button",
+			"    $('#frmConsignatarios').bootstrapValidator({\n        message: 'This value is not valid',\n        feedbackIcons: {\n            valid: 'glyphicon glyphicon-ok',\n            invalid: 'glyphicon glyphicon-remove',\n            validating: 'glyphicon glyphicon-refresh'\n        },\n        fields: {\n            Nombre: {\n                required:true,\n                validators: {\n                    notEmpty: {\n                        message: '*Campo requerido'\n                    },\n                    stringLength: {\n                        min: 60,\n                        max: 200,\n                        message: 'Caracteres: Minimo: 60, Maximo: 200'\n                    },\n                    regexp: {\n                        regexp: /^[a-z\\s]+$/i,\n                        message: 'Caracteres permitidos: Solo letras y espacios'\n                    }\n                }\n            },\n            Permiso: {\n                validators: {\n                    notEmpty: {\n                        message: '*Campo requerido'\n                    },\n                    stringLength: {\n                        min: 1,\n                        max: 15,\n                        message: 'Caracteres: Minimo: 1, Maximo: 15'\n                    }\n                }\n            },\n            Zona: {\n                validators: {\n                    notEmpty: {\n                        message: '*Campo requerido'\n                    },\n                    stringLength: {\n                        min: 1,\n                        max: 10,\n                        message: 'Caracteres: Minimo: 1, Maximo: 10'\n                    }\n                }\n            },\n            Limite: {\n                validators: {\n                    notEmpty: {\n                        message: 'Campo requerido'\n                    },\n                    stringLength: {\n                        min: 2,\n                        max: 45,\n                        message: 'Caracteres: Minimo: 2, Maximo: 45'\n                    },\n                    regexp: {\n                        regexp: '^[0-9]+(\\.[0-9]{1,2})?$',\n                        message: 'Caracteres permitidos: Solo letras y espacios'\n                    }\n                }\n            }\n        }//Final de fields\n    });//Cierre del validator del form\n\n",
+			"    $('#frm').bootstrapValidator({\n        message: 'This value is not valid',\n        feedbackIcons: {\n            valid: 'glyphicon glyphicon-ok',\n            invalid: 'glyphicon glyphicon-remove',\n            validating: 'glyphicon glyphicon-refresh'\n        },\n        fields: {\n            Nombre: {\n                required:true,\n                validators: {\n                    notEmpty: {\n                        message: '*Campo requerido'\n                    },\n                    stringLength: {\n                        min: 60,\n                        max: 200,\n                        message: 'Caracteres: Minimo: 60, Maximo: 200'\n                    },\n                    regexp: {\n                        regexp: /^[a-z\\s]+$/i,\n                        message: 'Caracteres permitidos: Solo letras y espacios'\n                    }\n                }\n            }\n        }//Final de fields\n    });//Cierre del validator del form\n\n",
+			"nombre",
+			"frmConsignatarios",
+			"{{HTML::script('js/ConsignatariosValidator.js')}}",
+			"Disponible",
+			"remote",
+			"placeholder=\"Default input\"",
+			"form"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "AuthController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2027,
+								2027
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								428
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/HomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								717
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/Authenticate.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/RedirectIfAuthenticated.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								603,
+								678
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 148.0
+	},
+	"project": "gdfgdf.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 402.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,615 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"return",
+				"returnrol"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"header",
+				"header	Tag"
+			],
+			[
+				"he",
+				"header	<header>"
+			],
+			[
+				"Peronsl",
+				"Personal_Usuarios"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"Person",
+				"Personal"
+			],
+			[
+				"Per",
+				"Personal"
+			],
+			[
+				"Pers",
+				"Personal_Usuarios"
+			],
+			[
+				"perso",
+				"Personal"
+			],
+			[
+				"index",
+				"indexPath"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"per",
+				"Personal"
+			],
+			[
+				"person",
+				"Personal_Usuarios"
+			],
+			[
+				"Personal_",
+				"personal_usuarios"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"catego",
+				"categoria_id"
+			],
+			[
+				"for",
+				"forEach(function(aSome) {"
+			],
+			[
+				"cargar",
+				"cargartabltodo()	table_basic.blade.php"
+			],
+			[
+				"show",
+				"show()	datatables.tabletools.js"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 180.0,
+		"selected_items":
+		[
+			[
+				"close al",
+				"File: Close All"
+			],
+			[
+				"timmer",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"timer",
+				"Laravel Artisan: Migrate: Refresh"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"file",
+				"File: Locate"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Artisan",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"arti",
+				"Laravel Artisan: Help"
+			],
+			[
+				"controll",
+				"Laravel Generate: Controller"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"termina",
+				"Preferences: Terminal Key Bindings – Default"
+			],
+			[
+				"terminal",
+				"Preferences: Terminal Settings – User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"installc",
+				"Package Control: Install Package"
+			],
+			[
+				"controller",
+				"Laravel Generate: Controller"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"model",
+				"Laravel Generate: Model"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 368.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/TICS5A/copadeleche",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/Auth",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/routes.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/sftp-config.json",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/app/Http/routes.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/atencionreporte.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/egresoreporte.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/CajeroController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/User.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/ingresoreporte.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/Reportes/sftp-config.json",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/ingresoreporte.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/cajero/orden.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/js/form-plugins.demo.min.js",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/form_plugins.html",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/index2.blade.php",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/index.html",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Auth/Guard.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/word.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/js/advanced-form-components.js",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/advanced_form_components.html",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/owns/propios.css",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/assets/jquery-multi-select/js/jquery.quicksearch.js",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/form_component.html",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/ingreso.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/principal.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/ingreso2.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/egreso.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/atencion.blade.php",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/js/form-component.js",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/index.blade.php",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/js/advanced-form-components.js",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/assets/bootstrap-daterangepicker/daterangepicker.css",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/assets/bootstrap-daterangepicker/daterangepicker.js",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/table-responsive.css",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/estadisticas.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/reportes/estadisticas2.blade.php",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/index.html",
+		"/C/Users/Daniel/Documents/Proyectos/2015/ReportesSIILGE/Plantilla/themeforest-5902687-flatlab-bootstrap-3-responsive-admin-template/Flatlab Main Files/admin/template_content/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/admin/registrousuarios.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/bootstrap-wizard/js/bwizard.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/js/form-wizards-validation.demo.min.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/js/form-wizards.demo.min.js",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/bootstrap.css",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/refugios/nuevoingreso.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/resources/views/noticias.blade.php",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/bootstrap.min.css",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/style-responsive.css",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/style.css",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/bootstrap-v3.2.0.css",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/css/app.css",
+		"/C/xampp/htdocs/Proyectos2015/SIILGE/public/assets/summernote/dist/summernote-bs3.css",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Personal.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Rol.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Personal_Usuarios.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/ifnotGerente.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/ifnotCajero.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Middleware/Authenticate.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Kernel.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/public/js/form-validation-script.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/parsley/dist/parsley.js",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/vendor/composer/autoload_classmap.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/routes.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/.env",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Controllers/WelcomeController.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Middleware/Authenticate.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/AdministradorController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/WelcomeController.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Controllers/hg.sublime-project",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Controllers/PageController.php",
+		"/C/xampp/htdocs/Proyectos2015/TestMioLaravel5/app/Http/Kernel.php",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/Http/routes.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Http/Controllers/UserController.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/login.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/cajero/ventas.blade.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/Proyectos2015/Reportes2/app/views/layouts/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/layouts/index.blade.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php",
+		"/C/xampp/htdocs/TICS5A/CalidadProyectoIILaravel5/app/User.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/config/app.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/lang/en/validation.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/lang/es/validation.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/PersonalUsuarios.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Registrar.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/app/Categoria.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/js/table-manage-default.demo.min.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/js/jquery.dataTables.js",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/HttpCache/Store.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/css/data-table.css",
+		"/C/Users/Daniel/Documents/2015_02_17_000000_create_users_table.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/images/collection_hover.html",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/DataTables/images/collection.html",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/composer/installed.json",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/phpunit/phpunit/tests/_files/ExceptionInSetUpTest.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/phpunit/php-token-stream/tests/_fixture/classInScopedNamespace.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/vendor/phpunit/phpunit/src/Framework/Constraint/IsNull.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/index.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/config/mail.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/public/plugins/masked-input/masked-input.min.js",
+		"/C/xampp/htdocs/Proyectos2015/Reportes2/app/routes.php",
+		"/C/xampp/htdocs/TICS5A/copadeleche/resources/views/cajero/table_manage.blade.php",
+		"/C/xampp/htdocs/TICS5A/renuevawebonline/app/routes.php",
+		"/C/Users/Daniel/Documents/UTT/5 Cuatrimestre/Material/IntentoColorAdmin/ColorAdmin/seantheme.com/color-admin-v1.6/admin/html/table_manage.html",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.339/Categoria.php",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.673/2015_02_18_032555_create_foreign_keys.php",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.060/2015_02_18_032545_create_users_table.php",
+		"/C/Users/Daniel/AppData/Local/Temp/Rar$DIa0.699/2015_02_18_032545_create_categorias_table.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/database/migrations/2015_02_17_000000_create_users_table.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Providers/AppServiceProvider.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Http/Controllers/Auth/PasswordController.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Categoria.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/database/migrations/2015_02_16_180145_categorias.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/User.php",
+		"/C/xampp/htdocs/TICS5A/CopaDeLeche/app/Http/Controllers/Auth/AuthController.php"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"checked",
+			"checke",
+			"checked",
+			"type=\"radio\"",
+			"type=\"checkbox\"",
+			"radio",
+			"datepicker-autoClose",
+			"assets",
+			"();\n",
+			"plugins",
+			"assets",
+			"01",
+			"accordion2",
+			"39",
+			"24",
+			"16",
+			"15",
+			"14",
+			"13",
+			"12",
+			"10",
+			"collapseOne2",
+			"accordion",
+			"collapseOne",
+			"header",
+			"73",
+			"collapseEight",
+			"14",
+			"13",
+			"12",
+			"collapseThree",
+			"53",
+			"52",
+			"54",
+			"51",
+			"50",
+			"49",
+			"48",
+			"47",
+			"46",
+			"45",
+			"44",
+			"43",
+			"42",
+			"41",
+			"40",
+			"39",
+			"collapseSix",
+			"51",
+			"38",
+			"37",
+			"36",
+			"35",
+			"34",
+			"33",
+			"32",
+			"31",
+			"30",
+			"29",
+			"28",
+			"27",
+			"26",
+			"25",
+			"24",
+			"collapseFive",
+			"23",
+			"21",
+			"20",
+			"19",
+			"18",
+			"17",
+			"16",
+			"22",
+			"23",
+			"21",
+			"20",
+			"19",
+			"18",
+			"17",
+			"collapseFour",
+			"collapseThree",
+			"collapseTwo",
+			"var",
+			"radios",
+			"collapseOne",
+			"accordion",
+			"dpMonths",
+			"form_datetime-component\nform_datetime-component",
+			"form_datetime-component",
+			"assets",
+			"date",
+			"datetime",
+			"<!",
+			"circle",
+			"4",
+			"symbol",
+			"terques",
+			"symbol terque",
+			"symbol",
+			"symbol terques",
+			"symbol",
+			"symbol terques",
+			"css",
+			"valid",
+			"radio",
+			"Radio",
+			"radio",
+			"Radio",
+			"radio",
+			"checkbox",
+			"panel",
+			"panel-danger",
+			"btn-danger",
+			"panel",
+			"PANEL",
+			"#000",
+			"#0000",
+			"0000",
+			"00000",
+			"a",
+			"color",
+			"panel",
+			"btn",
+			"white",
+			"btn-danger",
+			"color",
+			"text-color",
+			"danger"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 148.0
+	},
+	"project": "askjl.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 318.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

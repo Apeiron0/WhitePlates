@@ -1,0 +1,124 @@
+/* ...................................................................... */
+/* |#################| Listado de platillos ordenados |#################| */
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+.tabla-cabecera{
+	border-bottom: solid #947952;
+}
+.tabla-cabecera, .contendedor, .precio{
+	color: #947952;
+}
+.panel-color{
+	background-color: #FCF5BE;
+}
+.contendedor{
+	background-color: #FDFCDF;
+}
+.row-producto, .row-cantidad{
+	border-right: 1px dashed #947952;
+}
+.row-cantidad, .table-titles{
+	text-align: center;
+}
+.row-precio{
+	text-align: right;
+}
+.row-row{
+	border-bottom: 3px solid #FCF5BE;
+}
+.panel-footer-color{
+	background-color: #FCD98B;
+}
+/* ...................................................................... */
+/* |#######################| Listado de ordenes |#######################| */
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+.ods-cont-orden{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #E29969;
+	color: #614E49;
+	font-size: 12px;
+}
+.ods-cont-precio{
+	border-top: 1px dashed #725643;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	box-shadow: 0px 1px 0px #E08863;
+	background-color: #B47A54;
+	color: #614D41;
+	margin-bottom: 7.5px;
+	text-align: right;
+	font-size: 12px;
+}
+.ods-cont-orden, .ods-cont-precio{
+	/*text-align: center;*/
+	padding: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ods-mini-titulos{
+	font-size: 10px;
+	color: #947952;
+}
+.ods-mouse:hover{
+	background-color: #F9F1B0;
+}
+/* ...................................................................... */
+/* |#########################| Titulo ordenes |#########################| */
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+.ods-cont-title{
+	background-color: #FBFBFB;
+	color: #ABABAB;
+	font-size: 11px;
+	text-align: center;
+	border-radius: 3px;
+	padding: 2px;
+	margin-bottom: 5px;
+	border: 1px solid #EEEEEE;
+}
+/* ...................................................................... */
+/* |#############| Para los contenedores de los platillos |#############| */
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+.cont-cocina{
+	border-radius: 3px;
+}
+/*.titulo-platillo{
+	color: #574539;
+}*/
+.cont-header-platillo{
+	background-color: white;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding: 5px;
+	/*height: 10px;*/
+}
+.cont-platillo{
+	background-color: #FCD98B;
+	padding: 5px;
+	padding-top: 0px;
+	text-align: center;
+	/*box-shadow: inset 0 0 5px #F1D696;*/
+}
+.platillo{
+	background-color: #FABB7C;
+	padding: 10px;
+	border: 1px solid #EF9C65;
+	color: #786C65;
+	margin-top: 5px;
+}
+.cont-recetario{
+	background-color: white;
+	padding: 20px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	margin-bottom: 10px;
+}
+.borde-inferior{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #E6E6E6;
+	margin-bottom: 5px;
+}
+.mouse-sobre:hover{
+	background-color: #F7B16F;
+	border: 1px dashed #D17C58;
+	color: #786C65;
+}
